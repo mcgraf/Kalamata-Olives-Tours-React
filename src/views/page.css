@@ -1,0 +1,16 @@
+.page-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.page-container1 {
+  width: 1057px;
+  height: 863px;
+}
+.page-container2 {
+  display: contents;
+}
