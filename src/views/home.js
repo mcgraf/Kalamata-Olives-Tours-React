@@ -372,7 +372,7 @@ const Home = (props) => {
               <div className="home-container07">
                 <span className="home-text057">From:  </span>
                 <span className="home-text058">€</span>
-                <span className="home-basic-plan-pricing">35</span>
+                <span className="home-basic-plan-pricing">50</span>
                 <span className="home-text059"> / person</span>
               </div>
               <div className="home-container08">
@@ -528,7 +528,7 @@ const Home = (props) => {
   <!-- Author: FormBold Team -->
   <!-- Learn More: https://formbold.com -->
   <div class="formbold-form-wrapper">
-    <form action="https://formbold.com/s/3npzA" method="POST">
+    <form name="contact" action="https://formbold.com/s/3npzA" method="POST" data-netlify="true">
       <div class="formbold-input-flex">
         <div>
           <label for="firstname" class="formbold-form-label">First name</label>
@@ -588,7 +588,7 @@ const Home = (props) => {
     </form>
   </div>
 </div>
-<style>
+<style>  
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
   * {
     margin: 0;
@@ -741,19 +741,10 @@ const Home = (props) => {
               <span>Sterna Messinia 24015 Greece</span>
               <br></br>
               <br></br>
-              <span>
-                Phone: +306976690656
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
+              <span>Phone: +306936849530</span>
               <br></br>
-              <span>             +302722094955</span>
-              <br></br>
-              <span>             +306936849530</span>
-              <br className="home-text097"></br>
+              <span>             +306976690656</span>
+              <br className="home-text095"></br>
               <br></br>
               <span>E-mail: info@greenlandproducts.gr</span>
               <br></br>
@@ -785,7 +776,7 @@ const Home = (props) => {
           </div>
           <div className="home-separator"></div>
           <div className="home-container35">
-            <span className="home-text101">
+            <span className="home-text099">
               <span className="bodySmall">
                 © 2024
                 <span
