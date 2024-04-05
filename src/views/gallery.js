@@ -10,8 +10,11 @@ const Gallery = (props) => {
   return (
     <div className="gallery-container">
       <Helmet>
-        <title>Gallery - Kalamata Olives Tours</title>
-        <meta property="og:title" content="Gallery - Kalamata Olives Tours" />
+        <title>Gallery - Kalamata Olives Tours | Official Site</title>
+        <meta
+          property="og:title"
+          content="Gallery - Kalamata Olives Tours | Official Site"
+        />
       </Helmet>
       <div className="gallery-header">
         <header
@@ -37,7 +40,7 @@ const Gallery = (props) => {
               <span className="gallery-nav52 bodySmall">Contact</span>
             </nav>
             <div className="gallery-buttons">
-              <Link to="/" className="gallery-register buttonFilled">
+              <Link to="/booking" className="gallery-register buttonFilled">
                 Book Now
               </Link>
             </div>
@@ -171,17 +174,41 @@ const Gallery = (props) => {
               </span>
             </span>
             <div className="gallery-btn-group">
-              <Link to="/" className="gallery-hero-button1 buttonFilled">
-                Book Now
-              </Link>
               <button className="buttonFlat">Learn More →</button>
             </div>
           </div>
         </div>
       </div>
-      <div className="gallery-banner">
+      <div className="gallery-be-search-form">
         <div className="gallery-container2">
           <div className="gallery-container3">
+            <Script
+              html={`<!-- start Search form script -->
+<div id='block-search'>
+    <div id='be-search-form' class='be-container'>
+        <a href='https://exely.com/' rel='nofollow' target='_blank'>Hotel management software</a>
+    </div>
+</div>
+<script type='text/javascript'>
+  !function(e,n){
+      var t="bookingengine",o="integration",i=e[t]=e[t]||{},a=i[o]=i[o]||{},r="__cq",c="__loader",d="getElementsByTagName";
+      if(n=n||[],a[r]=a[r]?a[r].concat(n):n,!a[c]){a[c]=!0;var l=e.document,g=l[d]("head")[0]||l[d]("body")[0];
+      !function n(i){if(0!==i.length){var a=l.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://"+i[0]+"/integration/loader.js",
+      a.onerror=a.onload=function(n,i){return function(){e[t]&&e[t][o]&&e[t][o].loaded||(g.removeChild(n),i())}}(a,(function(){n(i.slice(1,i.length))})),g.appendChild(a)}}(
+      ["gr-ibe.hopenapi.com","ibe.hopenapi.com","ibe.behopenapi.com"])}
+  }(window,[
+      ['setContext', 'BE-INT-kalamataolivetours_2024-04-03', 'en'],
+      ['embed', 'search-form', {container: 'be-search-form'}]
+  ]);
+</script>
+<!-- end Search form script -->`}
+            ></Script>
+          </div>
+        </div>
+      </div>
+      <div className="gallery-banner">
+        <div className="gallery-container4">
+          <div className="gallery-container5">
             <Script
               html={`<script>if(!window.picflow){window.picflow=!0;var s=document.createElement("script");s.src="https://picflow.com/embed/main.js";s.type='module';s.defer=true;document.head.appendChild(s);}</script><picflow-gallery id="gal_ZMFg1JGzYcaRbgDa" lightbox="#000000E6" no-padding="true" no-background="true"></picflow-gallery>...`}
             ></Script>
@@ -190,7 +217,7 @@ const Gallery = (props) => {
       </div>
       <div className="gallery-footer">
         <footer className="footerContainer gallery-footer1">
-          <div className="gallery-container4">
+          <div className="gallery-container6">
             <span className="logo">kalamata olives tours</span>
             <nav className="gallery-nav1">
               <span className="bodySmall">Home</span>
@@ -201,7 +228,7 @@ const Gallery = (props) => {
             </nav>
           </div>
           <div className="gallery-separator"></div>
-          <div className="gallery-container5">
+          <div className="gallery-container7">
             <span className="bodySmall gallery-text16">
               © 2024 Greenland Co-Farming, All Rights Reserved.
             </span>

@@ -9,8 +9,11 @@ const Page = (props) => {
   return (
     <div className="page-container">
       <Helmet>
-        <title>Page - Kalamata Olives Tours</title>
-        <meta property="og:title" content="Page - Kalamata Olives Tours" />
+        <title>Page - Kalamata Olives Tours | Official Site</title>
+        <meta
+          property="og:title"
+          content="Page - Kalamata Olives Tours | Official Site"
+        />
       </Helmet>
       <div className="page-container1">
         <div className="page-container2">

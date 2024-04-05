@@ -9,6 +9,7 @@ import {
 
 import './style.css'
 import Gallery from './views/gallery'
+import Booking from './views/booking'
 import Home from './views/home'
 import Page from './views/page'
 import NotFound from './views/not-found'
@@ -18,6 +19,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route component={Gallery} exact path="/gallery" />
+        <Route component={Booking} exact path="/booking" />
         <Route component={Home} exact path="/" />
         <Route component={Page} exact path="/page" />
         <Route component={NotFound} path="**" />

@@ -12,8 +12,11 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Kalamata Olives Tours</title>
-        <meta property="og:title" content="Kalamata Olives Tours" />
+        <title>Kalamata Olives Tours | Official Site</title>
+        <meta
+          property="og:title"
+          content="Kalamata Olives Tours | Official Site"
+        />
       </Helmet>
       <div className="home-header">
         <header
@@ -43,9 +46,9 @@ const Home = (props) => {
               </a>
             </nav>
             <div className="home-buttons">
-              <a href="#tours" className="home-register buttonFilled">
+              <Link to="/booking" className="home-register buttonFilled">
                 Book Now
-              </a>
+              </Link>
             </div>
           </div>
           <div data-thq="thq-burger-menu" className="home-burger-menu">
@@ -177,13 +180,37 @@ const Home = (props) => {
               </span>
             </span>
             <div className="home-btn-group">
-              <a href="#tours" className="home-hero-button1 buttonFilled">
-                Book Now
-              </a>
               <a href="#about" className="home-hero-button2 buttonFlat">
                 Learn More →
               </a>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="home-be-search-form">
+        <div className="home-container02">
+          <div className="home-container03">
+            <Script
+              html={`<!-- start Search form script -->
+<div id='block-search'>
+    <div id='be-search-form' class='be-container'>
+        <a href='https://exely.com/' rel='nofollow' target='_blank'>Hotel management software</a>
+    </div>
+</div>
+<script type='text/javascript'>
+  !function(e,n){
+      var t="bookingengine",o="integration",i=e[t]=e[t]||{},a=i[o]=i[o]||{},r="__cq",c="__loader",d="getElementsByTagName";
+      if(n=n||[],a[r]=a[r]?a[r].concat(n):n,!a[c]){a[c]=!0;var l=e.document,g=l[d]("head")[0]||l[d]("body")[0];
+      !function n(i){if(0!==i.length){var a=l.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://"+i[0]+"/integration/loader.js",
+      a.onerror=a.onload=function(n,i){return function(){e[t]&&e[t][o]&&e[t][o].loaded||(g.removeChild(n),i())}}(a,(function(){n(i.slice(1,i.length))})),g.appendChild(a)}}(
+      ["gr-ibe.hopenapi.com","ibe.hopenapi.com","ibe.behopenapi.com"])}
+  }(window,[
+      ['setContext', 'BE-INT-kalamataolivetours_2024-04-03', 'en'],
+      ['embed', 'search-form', {container: 'be-search-form'}]
+  ]);
+</script>
+<!-- end Search form script -->`}
+            ></Script>
           </div>
         </div>
       </div>
@@ -248,7 +275,7 @@ const Home = (props) => {
       <div className="home-features">
         <div className="featuresContainer">
           <div className="home-features1">
-            <div className="home-container02">
+            <div className="home-container04">
               <span className="overline">
                 <span>features</span>
                 <br></br>
@@ -324,7 +351,7 @@ const Home = (props) => {
                 </span>
               </span>
             </div>
-            <div className="home-container03">
+            <div className="home-container05">
               <FeatureCard
                 heading="Once upon an olive grove"
                 subHeading="Take a walk to the olive groves of the village. Learn about the crops and harvesting. Meet farmers and see how they work, learn about the different olive varieties in the region, how extra virgin olive oil is produced, how we treat our olive groves and trees."
@@ -347,7 +374,7 @@ const Home = (props) => {
       </div>
       <div className="home-pricing">
         <div id="tours" className="pricingContainer">
-          <div className="home-container04">
+          <div className="home-container06">
             <span className="overline">
               <span>Pricing</span>
               <br></br>
@@ -361,46 +388,44 @@ const Home = (props) => {
               </span>
             </span>
           </div>
-          <div className="home-container05">
+          <div className="home-container07">
             <div className="basicPricingCard home-pricing-card">
-              <div className="home-container06">
+              <div className="home-container08">
                 <span className="bodySmall">
                   Enhance your agrotourism experience with our tour package
                   starting from
                 </span>
               </div>
-              <div className="home-container07">
+              <div className="home-container09">
                 <span className="home-text057">From:  </span>
                 <span className="home-text058">€</span>
                 <span className="home-basic-plan-pricing">50</span>
                 <span className="home-text059"> / person</span>
               </div>
-              <div className="home-container08">
-                <div className="home-container09">
+              <div className="home-container10">
+                <div className="home-container11">
                   <span className="home-text060">✔</span>
                   <span className="bodySmall">
                     Extended guided tour of olive groves
                   </span>
                 </div>
-                <div className="home-container10">
+                <div className="home-container12">
                   <span className="home-text061">✔</span>
                   <span className="bodySmall">
                     Hands-on olive picking experience
                   </span>
                 </div>
-                <div className="home-container11">
+                <div className="home-container13">
                   <span className="home-text062">✔</span>
                   <span className="bodySmall">Olive oil tasting session</span>
                 </div>
-                <div className="home-container12">
+                <div className="home-container14">
                   <span className="home-text063">✔</span>
                   <span className="bodySmall">Dining services included</span>
                 </div>
               </div>
               <a
-                href="https://b.tlintegration.com/?hotel=504026"
-                target="_blank"
-                rel="noreferrer noopener"
+                href="/booking?room-type=5020978,5022582"
                 className="home-link buttonFilledSecondary"
               >
                 Book Now
@@ -414,61 +439,61 @@ const Home = (props) => {
           <h1 className="home-banner-heading heading2">
             Immerse Yourself in the World of Olive Trees
           </h1>
-          <div className="home-container13">
-            <div className="home-container14">
-              <div className="home-container15">
+          <div className="home-container15">
+            <div className="home-container16">
+              <div className="home-container17">
                 <span className="home-text064">✔</span>
                 <span className="bodySmall">Duration - 2h</span>
               </div>
-              <div className="home-container16">
+              <div className="home-container18">
                 <span className="home-text066">✔</span>
                 <span>Availability - Up to 4 persons</span>
               </div>
-              <div className="home-container17">
+              <div className="home-container19">
                 <span className="home-text067">✔</span>
                 <span className="bodySmall">Guided Tour - Up to 4 persons</span>
               </div>
-              <div className="home-container18">
+              <div className="home-container20">
                 <span className="home-text068">✔</span>
                 <span className="bodySmall">Overnight Stay - Not Provided</span>
               </div>
-              <div className="home-container19">
+              <div className="home-container21">
                 <span className="home-text069">✔</span>
                 <span className="bodySmall">
                   Active Months - May, Jun, Jul, Aug, Sep, Oct
                 </span>
               </div>
-              <div className="home-container20">
+              <div className="home-container22">
                 <span className="home-text070">✔</span>
                 <span className="bodySmall">
                   Transfer service with extra charge
                 </span>
               </div>
             </div>
-            <div className="home-container21">
-              <div className="home-container22">
+            <div className="home-container23">
+              <div className="home-container24">
                 <span className="home-text071">✔</span>
                 <span>Dining Services Included</span>
               </div>
-              <div className="home-container23">
+              <div className="home-container25">
                 <span className="home-text073">✔</span>
                 <span className="bodySmall">Toilets</span>
               </div>
-              <div className="home-container24">
+              <div className="home-container26">
                 <span className="home-text074">✔</span>
                 <span className="bodySmall">Accessibility</span>
               </div>
-              <div className="home-container25">
+              <div className="home-container27">
                 <span className="home-text075">✔</span>
                 <span className="bodySmall">
                   Retail shop with olive oil products
                 </span>
               </div>
-              <div className="home-container26">
+              <div className="home-container28">
                 <span className="home-text076">✔</span>
                 <span className="bodySmall">Pet Friendly</span>
               </div>
-              <div className="home-container27">
+              <div className="home-container29">
                 <span className="home-text077">✔</span>
                 <span className="bodySmall">
                   Tour Languages - Greek, English
@@ -481,7 +506,7 @@ const Home = (props) => {
       <div className="home-faq">
         <div className="faqContainer">
           <div className="home-faq1">
-            <div className="home-container28">
+            <div className="home-container30">
               <span className="overline">
                 <span>FAQ</span>
                 <br></br>
@@ -494,7 +519,7 @@ const Home = (props) => {
                 <br></br>
               </span>
             </div>
-            <div className="home-container29">
+            <div className="home-container31">
               <Question1
                 answer="Agrotourism is a form of tourism that involves visiting agricultural areas to learn about the local farming practices and culture."
                 question="What is agrotourism?"
@@ -519,16 +544,18 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <div id="contact" className="home-container30">
-        <div className="home-container31">
-          <div className="home-container32">
-            <div className="home-container33">
+      <div id="contact" className="home-container32">
+        <div className="home-container33">
+          <div className="home-container34">
+            <div className="home-container35">
               <Script
                 html={`<div class="formbold-main-wrapper">
   <!-- Author: FormBold Team -->
   <!-- Learn More: https://formbold.com -->
   <div class="formbold-form-wrapper">
-    <form name="contact" action="https://formbold.com/s/3npzA" method="POST" data-netlify="true">
+    <form name="contact" action="https://public.herotofu.com/v1/6001ef50-eb73-11ee-97a2-f17dd40c9cd8"
+   accept-charset="UTF-8"
+   method="POST" data-netlify="true">
       <div class="formbold-input-flex">
         <div>
           <label for="firstname" class="formbold-form-label">First name</label>
@@ -609,7 +636,7 @@ const Home = (props) => {
     margin: 0 auto;
     max-width: 550px;
     width: 100%;
-    background: #10170b;
+    background: #5a704c;
   }
 
   .formbold-input-flex {
@@ -746,7 +773,7 @@ const Home = (props) => {
               <span>             +306976690656</span>
               <br className="home-text095"></br>
               <br></br>
-              <span>E-mail: info@greenlandproducts.gr</span>
+              <span>E-mail: info@kalamataolivetours.com</span>
               <br></br>
             </span>
           </div>
@@ -754,7 +781,7 @@ const Home = (props) => {
       </div>
       <div className="home-footer">
         <footer className="footerContainer home-footer1">
-          <div className="home-container34">
+          <div className="home-container36">
             <span className="logo">kalamata olives tours</span>
             <nav className="home-nav1">
               <Link to="/" className="home-nav122 bodySmall">
@@ -775,7 +802,7 @@ const Home = (props) => {
             </nav>
           </div>
           <div className="home-separator"></div>
-          <div className="home-container35">
+          <div className="home-container37">
             <span className="home-text099">
               <span className="bodySmall">
                 © 2024
