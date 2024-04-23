@@ -208,6 +208,14 @@
   font-style: normal;
   font-weight: 700;
 }
+.home-gallery {
+  width: 100%;
+  display: grid;
+  padding: var(--dl-space-space-threeunits);
+  grid-gap: var(--dl-space-space-unit);
+  max-width: var(--dl-size-size-maxwidth);
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .home-features {
   flex: 0 0 auto;
   width: 100%;
@@ -743,6 +751,9 @@
   .home-banner {
     background-color: #5a704c;
   }
+  .home-gallery {
+    background-color: var(--dl-color-custom-neutral-dark);
+  }
   .home-basic-plan-pricing {
     font-size: 4rem;
   }
@@ -791,6 +802,9 @@
     text-align: center;
     padding-left: var(--dl-space-space-threeunits);
     padding-right: var(--dl-space-space-threeunits);
+  }
+  .home-gallery {
+    grid-template-columns: 1fr 1fr;
   }
   .home-features-sub-heading {
     text-align: center;
@@ -853,6 +867,10 @@
     padding-right: var(--dl-space-space-unit);
   }
   .home-banner {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .home-gallery {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
@@ -945,6 +963,12 @@
     flex-direction: column;
   }
   .home-banner {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .home-gallery {
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);

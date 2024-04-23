@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 
+import GalleryCard1 from '../components/gallery-card1'
 import FeatureCard from '../components/feature-card'
 import Question1 from '../components/question1'
 import './home.css'
@@ -272,6 +273,45 @@ const Home = (props) => {
           <br className="bodyLarge"></br>
         </span>
       </div>
+      <div className="home-gallery">
+        <GalleryCard1
+          title=" "
+          imageSrc="/photos/2-1500h.webp"
+          subtitle=" "
+          rootClassName="rootClassName"
+        ></GalleryCard1>
+        <GalleryCard1
+          title=" "
+          imageAlt=" "
+          imageSrc="/photos/dsc_7223%20(1)-1500h.webp"
+          subtitle=" "
+          rootClassName="rootClassName1"
+        ></GalleryCard1>
+        <GalleryCard1
+          title=" "
+          imageSrc="/photos/dsc04410%20(1)-1500h.webp"
+          subtitle=" "
+          rootClassName="rootClassName2"
+        ></GalleryCard1>
+        <GalleryCard1
+          title=" "
+          imageSrc="/photos/dsc04630-1500h.webp"
+          subtitle=" "
+          rootClassName="rootClassName3"
+        ></GalleryCard1>
+        <GalleryCard1
+          title=" "
+          imageSrc="/photos/dsc04659%20(1)-1500h.webp"
+          subtitle=" "
+          rootClassName="rootClassName4"
+        ></GalleryCard1>
+        <GalleryCard1
+          title=" "
+          imageSrc="/photos/gre-20180113youngfarmersna02-1500h.webp"
+          subtitle=" "
+          rootClassName="rootClassName5"
+        ></GalleryCard1>
+      </div>
       <div className="home-features">
         <div className="featuresContainer">
           <div className="home-features1">
@@ -399,7 +439,7 @@ const Home = (props) => {
               <div className="home-container09">
                 <span className="home-text057">From:  </span>
                 <span className="home-text058">€</span>
-                <span className="home-basic-plan-pricing">50</span>
+                <span className="home-basic-plan-pricing">75</span>
                 <span className="home-text059"> / person</span>
               </div>
               <div className="home-container10">
